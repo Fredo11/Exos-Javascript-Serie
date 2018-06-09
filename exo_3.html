@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Affichage_image</title>
+
+    <!--======================= déclaration du style de la div ==============-->
+    <style>
+
+    </style>
+
+  </head>
+
+  <body>
+    <!--======================= déclaration du choix =======================-->
+                <p>Choisissez une image, tapez 1 pour HTML.... et 2 pour ....JAVASCRIPT </p>
+
+    <!--======================= déclaration des input =======================-->
+
+                <input type="text" name="" id="saisie" value="">
+                <input type="submit" name="" id="choisir" value="Choisir l'image">
+                <br>
+
+
+    <script type="text/javascript">
+    <!--======================= déclaration de écoute au click ==============-->
+
+                var a = document.getElementById('choisir');
+                a.addEventListener("click",afficher);
+
+    <!--======================= déclaration dela fonction  ==================-->
+
+                function afficher(){
+
+                var image = document.getElementById('saisie').value;
+
+                if (image == "1") {
+
+                    var a= document.createElement('img'); // variable qui creer balise <img>.
+                    a.setAttribute('src','./img/image1.jpg');// création de la source dans les balises <img> pour attribué la carte retourné et nous l'affiché.
+                    document.body.appendChild(a); // affichage a la suite des balises <img> crée au-dessus.
+
+                }else if (image == "2") {
+
+                    var a= document.createElement('img'); // variable qui creer balise <img>.
+                    a.setAttribute('src','./img/image1_2.jpg');// création de la source dans les balises <img> pour attribué la carte retourné et nous l'affiché.
+                    document.body.appendChild(a); // affichage a la suite des balises <img> crée au-dessus.
+
+                }else {
+                    alert("Tapez 1 ou 2 ")
+                }}
+
+
+    </script>
+
+  </body>
+</html>

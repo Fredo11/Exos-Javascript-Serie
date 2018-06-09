@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Addition</title>
+  </head>
+  <body>
+    <!--======================= déclaration des input =======================-->
+
+    <form class="" action="index.html" method="post">
+
+          <label for="">Premier nombre:</label>
+          <input type="text" name="" value="" id="chiffre_1">
+          <label for="">deuxieme nombre:</label>
+          <input type="text" name="" value="" id="chiffre_2">
+
+    </form>
+    <!--======================= déclaration du bouton  ======================-->
+
+          <input type="button" name="" id="addition" value="Addition">
+
+    <script type="text/javascript">
+
+    <!--======================= déclaration de ecoute click =================-->
+
+          var a = document.getElementById('addition');
+          a.addEventListener("click",calcul);
+
+    <!--======================= déclaration de la fonction ==================-->
+
+          function calcul(){
+
+          var b = document.getElementById('chiffre_1').value;
+          var c = document.getElementById('chiffre_2').value;
+
+          alert(b*c);    <!--=== affichage ===-->
+
+          }
+
+    </script>
+  </body>
+</html>

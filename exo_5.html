@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Age</title>
+  </head>
+  <body>
+    <!--======================= déclaration des input =======================-->
+
+    <form class="" action="index.html" method="post">
+
+          <label for="">Quel est votre âge ?</label>
+          <input type="text" name="" value="" id="age">
+
+
+    </form>
+    <!--======================= déclaration du bouton  ======================-->
+
+          <input type="button" name="" id="calcul" value="Calcul en jours">
+
+    <script type="text/javascript">
+
+    <!--======================= déclaration de ecoute click =================-->
+
+          var a = document.getElementById('calcul');
+          a.addEventListener("click",calcul_jour);
+
+    <!--======================= déclaration de la fonction ==================-->
+
+          function calcul_jour(){
+
+          var b = document.getElementById('age').value;
+
+
+          alert("Vous avez vécu "+ b*365 +" jours!!!!!");    <!--=== affichage ===-->
+
+          }
+
+    </script>
+  </body>
+</html>

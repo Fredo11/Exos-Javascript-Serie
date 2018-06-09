@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>chiffre 1 à 5</title>
+  </head>
+  <body>
+    <!--======================= déclaration des input =======================-->
+    <form class="" action="index.html" method="post">
+
+          <label for="">Tapez un nombre entre 0 et 5 :</label>
+          <input type="text" name="" value="" id="nombre">
+
+    </form>
+
+    <!--======================= déclaration du bouton  ======================-->
+
+          <input type="button" name="" id="bouton" value="Ecrire le nombre en caractères">
+
+    <script type="text/javascript">
+
+    <!--======================= déclaration du tableau =================-->
+    // var cartes=['Zéro', 'Un', 'Deux', 'Trois', 'Quatre', 'Cinq'];
+    // var position=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18];
+
+    <!--======================= déclaration de ecoute click =================-->
+
+          var a = document.getElementById('bouton');
+          a.addEventListener("click",creation);
+
+          <!--======================= déclaration de la fonction ==================-->
+    // function creation(){
+    //
+    //        var b= document.getElementById('nombre').value;
+    //
+    //        if (b<=5){
+    //                 if (b==0) {
+    //                 document.write('Zéro');
+    //
+    //                 }else if (b==1) {
+    //                 document.write('Un');
+    //
+    //                 }else if (b==2) {
+    //                 document.write('Deux');
+    //
+    //                 }else if (b==3) {
+    //                 document.write('Trois');
+    //
+    //                 }else if (b==4) {
+    //                 document.write('Quatre');
+    //
+    //                 }else if (b==5) {
+    //                 document.write('Cinq');
+    //                 }
+    //               }
+    //       else {
+    //                 alert('Saisissez le bon nombre');
+    //                 }
+    //
+    //      };
+
+
+    function creation() {
+var saisie1=prompt("Entrez un nombre entier entre 0 et 5 :");
+var tabl=['zéro','un','deux','trois','quatre','cinq'];
+
+if (!(saisie1>=0 && saisie1<=5)) {
+alert('Le nombre saisi doit être compris entre 0 et 5')
+} else {
+alert(saisie1+' => '+tabl[saisie1]);
+}
+}
+
+    </script>
+  </body>
+</html>

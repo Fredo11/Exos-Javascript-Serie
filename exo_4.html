@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>modulo</title>
+  </head>
+  <body>
+    <!--======================= déclaration des input =======================-->
+
+    <form class="" action="index.html" method="post">
+
+          <label for="">Tapez un nombre quelconque ?</label>
+          <input type="text" name="" value="" id="chiffre_modulo">
+
+
+    </form>
+    <!--======================= déclaration du bouton  ======================-->
+
+          <input type="button" name="" id="modulo" value="Calcul modulo">
+
+    <script type="text/javascript">
+
+    <!--======================= déclaration de ecoute click =================-->
+
+          var a = document.getElementById('modulo');
+          a.addEventListener("click",calcul_modulo);
+
+    <!--======================= déclaration de la fonction ==================-->
+
+          function calcul_modulo(){
+
+          var b = document.getElementById('chiffre_modulo').value;
+          var c = b%5;
+
+
+          alert("Pour votre nombre "+ b +" le reste du calcul modulo par 5 est de " + c);    <!--=== affichage ===-->
+
+          }
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Age visé</title>
+  </head>
+  <body>
+    <!--======================= déclaration des input =======================-->
+
+    <form class="" action="index.html" method="post">
+
+          <label for="">Quel est votre âge ?</label>
+          <input type="text" name="" value="" id="age">
+          <label for="">Quel âge visez vous ?</label>
+          <input type="text" name="" value="" id="age_vise">
+
+    </form>
+    <!--======================= déclaration du bouton  ======================-->
+
+          <input type="button" name="" id="calcul" value="Calcul et écart en jours">
+
+    <script type="text/javascript">
+
+    <!--======================= déclaration de ecoute click =================-->
+
+          var a = document.getElementById('calcul');
+          a.addEventListener("click",calcul_ec);
+
+    <!--======================= déclaration de la fonction ==================-->
+
+          function calcul_ec(){
+
+          var b = document.getElementById('age').value;
+          var c = document.getElementById('age_vise').value;
+          // var saisie1=prompt('age');
+          // var saisie2=prompt('age_vise');
+          // var resultat= (saisie2 -saisie1)*365;
+
+          var d = (c-b)*365;
+
+
+          alert("Vous avez vécu "+ b*365 +" jours!!!!! et il y a encore  " + d + " jours avant vos " + c +" ans");    <!--=== affichage ===-->
+
+          }
+
+    </script>
+  </body>
+</html>
