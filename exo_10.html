@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>de_1_a_10</title>
+  </head>
+  <body>
+
+    <!-- ### EXERCICE 10
+    * définir un nombre à deviner (et pourquoi pas avec Math.random()?)
+    * récupérer un nombre entré par l'utilisateur
+    * si le nombre de l'utilisateur est plus grand que celui à deviner, afficher "Trop grand !"
+    * si le nombre de l'utilisateur est plus petit que celui à deviner, afficher "Trop petit !"
+    * si le nombre est identique au nombre à deviner, afficher "Gagné!" -->
+
+
+    <form class="" action="" method="post">
+      <button type="button" name="button">Chiffre aléatoire entre 1 et 10</button>
+      <label for="">Essayez de deviner le nombre</label>
+      <input type="text" id='nombre' name="" value="">
+      <button type="button" name="button">Ok</button>
+    </form>
+
+
+    <script type="text/javascript">
+
+              var Aleatoire;  // déclaration variable chiffre aléatoire
+
+//======================= déclaration de ecoute click =====================-->
+
+              document.getElementsByTagName('button')[0].addEventListener('click',un_nombre);
+
+
+//======================= déclaration de la fonction random generer chiffre aléatoire=================-->
+              function random_nbre(min,max){
+              return Math.floor(Math.random()*(max-min +1)) + min;
+              }
+
+
+//======================= déclaration de la fonction un_nombre de 1 à 10=================-->
+              function un_nombre(){
+                Aleatoire = random_nbre(1,10);
+              }
+
+//======================= déclaration de ecoute click =====================-->
+              document.getElementsByTagName('button')[1].addEventListener('click',devinez);
+
+
+//======================= déclaration de la fonction devinez=================-->
+              function devinez(){
+              var c = document.getElementById('nombre').value;    //récuperation de la valeur
+
+              if (c < Aleatoire) {          // condition plus ou moins
+                    alert("Plus !");
+              }
+              else if (c = Aleatoire) {
+                    alert("Trouvé!");
+              }
+              else {
+                    alert("Moins !");
+              }
+              };
+    </script>
+
+
+
+
+  </body>
+  </html>

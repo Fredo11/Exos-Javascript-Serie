@@ -13,6 +13,44 @@
     * attention à vider le champ une fois le champ ajouté
     * attention à ne rien faire si le champ est vide -->
 
+    <ul>
+      <li>Chocolat</li>
+      <li>Café</li>
+      <li>Pain</li>
+      <li>Beurre</li>
+      <li>Sucre</li>
+    </ul>
+
+    <form class="" action="" method="post">
+      <!--======================= déclaration des inputs    =================-->
+
+        <input type="text" name="" value="" id="article_rajout">
+        <input type="button" name="" value="Rajoutez" id="rajout">
+
+    </form>
+
+    <script type="text/javascript">
+      //======================= déclaration de ecoute click =================-->
+
+        document.getElementById('rajout').addEventListener("click",rajout);
+
+      //======================= déclaration de la fonction =================-->
+        function rajout(){
+
+              var a = document.getElementById('article_rajout').value;    //article à rajouter
+              var ul = document.getElementsByTagName('ul')[0];        //récupération de UL
+              var li = document.createElement(li);            //création de la LI
+              var b=document.createTextNode(a);      //création du texte article
+
+
+              if (a!=='') {
+                  li.appendChild(b);   //on ajoute le contenu à la li
+                  ul.appendChild(li);     //
+                  document.getElementById('a').value="";    //effacer l'input
+              }
+        }
+
+    </script>
 
   </body>
 </html>

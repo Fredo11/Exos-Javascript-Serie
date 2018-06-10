@@ -43,7 +43,7 @@
 
             var b= document.getElementById('nombre').value;
 
-            if (b<0 && b>5) {
+            if (!(b>=0 && b<=5)) {
             alert('Saisir un nombre entre 0 et 5')
             // suis en recherche  pour éviter une boucle x5 condition !!!!!!!!!!!!
             } else {
