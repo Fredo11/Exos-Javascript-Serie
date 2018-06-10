@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Affichage_image</title>
 
-    <!--======================= déclaration du style de la div ==============-->
+
     <style>
 
     </style>
@@ -12,6 +12,11 @@
   </head>
 
   <body>
+
+    <!-- ### EXERCICE 3
+    * demander l'adresse d'une image à l'utilisateur via un champ de texte
+    * au clic sur un bouton, ajouter cette image à la page -->
+
     <!--======================= déclaration du choix =======================-->
                 <p>Choisissez une image, tapez 1 pour HTML.... et 2 pour ....JAVASCRIPT </p>
 
@@ -36,18 +41,18 @@
 
                 if (image == "1") {
 
-                    var a= document.createElement('img'); // variable qui creer balise <img>.
-                    a.setAttribute('src','./img/image1.jpg');// création de la source dans les balises <img> pour attribué la carte retourné et nous l'affiché.
-                    document.body.appendChild(a); // affichage a la suite des balises <img> crée au-dessus.
+                    var a= document.createElement('img'); // variable création balise <img>.
+                    a.setAttribute('src','./img/image1.jpg');// création de la source dans la balise <img>
+                    document.body.appendChild(a); // affichage de la  balise <img> .
 
                 }else if (image == "2") {
 
                     var a= document.createElement('img'); // variable qui creer balise <img>.
-                    a.setAttribute('src','./img/image1_2.jpg');// création de la source dans les balises <img> pour attribué la carte retourné et nous l'affiché.
-                    document.body.appendChild(a); // affichage a la suite des balises <img> crée au-dessus.
+                    a.setAttribute('src','./img/image1_2.jpg');// création de la source dans la balise <img>
+                    document.body.appendChild(a); // affichage de la  balise <img>
 
                 }else {
-                    alert("Tapez 1 ou 2 ")
+                    alert("Tapez 1 ou 2 ")  <!--=== affichage ===-->
                 }}
 
 
